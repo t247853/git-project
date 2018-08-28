@@ -1,0 +1,5 @@
+# invisible file log
+log/
+
+#files .doc
+docs/*.doc

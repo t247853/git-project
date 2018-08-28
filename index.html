@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="getScrollOffset.js"></script>
+	<script type="text/javascript" src="drag.js"></script>
+</head>
+<body>
+	<img src="gif.gif" style="position:absolute; left:100px; top:100px;" onmousedown="if(event.shiftKey) drag(this, event);">
+	<div style="position:absolute; left:100px; top:100px; width:250px;
+				background-color:white; border: solid black;">
+		<div style="background-color:gray; border-bottom: dotted black;
+					padding:3px; font-family:sans-serif; font-weight:bold" onmousedown="drag(this.parentNode, event);">
+			Перетащи меня
+		</div>
+		<p>Это текст. Проверка, проверка, проверка...</p>
+	</div>
+	
+</body>
+</html>
